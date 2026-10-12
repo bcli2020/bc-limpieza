@@ -33,6 +33,49 @@ footer{background:#0c1827;color:#fff;padding:38px 0 100px}.foot{display:flex;jus
 .before-card img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
 @media(max-width:980px){.before-grid{grid-template-columns:repeat(2,1fr);gap:18px}}
 @media(max-width:560px){.before-grid{grid-template-columns:1fr;gap:18px}}
+/* Botón de reseñas de Google para BC-Limpieza */
+.google-review-container {
+    text-align: center;
+    margin-top: 35px;
+    padding: 10px;
+}
+
+.btn-google-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0751a5 0%, #0d67c8 100%);
+    color: #ffffff;
+    border: 2px solid #39c900;
+    padding: 14px 30px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-google-custom:hover {
+    background: linear-gradient(135deg, #39c900 0%, #208b00 100%);
+    border-color: #0751a5;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(57, 201, 0, 0.3);
+}
+
+.btn-google-custom:active {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+    .btn-google-custom {
+        width: 100%;
+        max-width: 320px;
+        font-size: 0.95rem;
+        padding: 12px 20px;
+    }
+}
 </style>
 </head>
 <body>
@@ -64,7 +107,12 @@ footer{background:#0c1827;color:#fff;padding:38px 0 100px}.foot{display:flex;jus
 
 <section id="videos" class="soft"><div class="container"><div class="section-head"><h2>Así trabajamos</h2><p>Videos reales para que veas el proceso, las herramientas y el trabajo en acción.</p></div><div class="videos"><article class="video-card"><video controls preload="metadata" playsinline><source src="assets/video/extraccion-asiento.mp4" type="video/mp4"></video><div class="video-body"><h3>Extracción sobre tapizado</h3><p>Proceso de limpieza en un asiento.</p></div></article><article class="video-card"><video controls preload="metadata" playsinline><source src="assets/video/equipo-real.mp4" type="video/mp4"></video><div class="video-body"><h3>Nuestro equipo</h3><p>Maquinaria que usamos en el trabajo.</p></div></article><article class="video-card"><video controls preload="metadata" playsinline><source src="assets/video/limpieza-sillon.mp4" type="video/mp4"></video><div class="video-body"><h3>Limpieza de sillón</h3><p>Trabajo real sobre tapizado.</p></div></article><article class="video-card"><video controls preload="metadata" playsinline><source src="assets/video/limpieza-vehiculo.mp4" type="video/mp4"></video><div class="video-body"><h3>Limpieza de vehículo</h3><p>Trabajo realizado sobre el interior.</p></div></article><article class="video-card"><video controls preload="metadata" playsinline><source src="assets/video/pulido-proceso.mp4" type="video/mp4"></video><div class="video-body"><h3>Trabajo en acción</h3><p>Proceso real de limpieza.</p></div></article></div></div></section>
 
-<section id="opiniones"><div class="container"><div class="section-head"><div class="kicker">Opiniones reales</div><h2>La confianza de nuestros clientes nos acompaña</h2><p>Algunos comentarios que recibimos después de nuestros trabajos.</p></div><div class="reviews"><article class="review"><div class="stars">★★★★★</div><p>“Excelente trabajo!! Lo recomiendo”</p><strong>Carla Hernandez</strong><small>Facebook</small></article><article class="review"><div class="stars">★★★★★</div><p>“Excelente servicio. Lo recomiendo”</p><strong>Claudia RS</strong><small>Facebook</small></article><article class="review"><div class="stars">★★★★★</div><p>“Excelente servicio, mis sillones quedaron como nuevos. Gracias”</p><strong>Anto Paez</strong><small>Facebook</small></article><article class="review"><div class="stars">★★★★★</div><p>“Excelente Trabajo el que Realizaron con mis sillones, rápidos y ordenados... MUYYYY Recomendables”</p><strong>Adriana Sarmiento</strong><small>Facebook</small></article><article class="review"><div class="stars">★★★★★</div><p>“Las sillas las dejaron muy bien y los detalles adentro del auto también. Gracias.”</p><strong>Cliente de BC</strong><small>WhatsApp</small></article><article class="review"><div class="stars">★★★★★</div><p>“El antes y el después de la camioneta... Quedó increíble!!! Muchísimas gracias”</p><strong>Cliente de BC</strong><small>WhatsApp</small></article></div></div></section>
+<section id="opiniones"><div class="container"><div class="section-head"><div class="kicker">Opiniones reales</div><h2>La confianza de nuestros clientes nos acompaña</h2><p>Algunos comentarios que recibimos después de nuestros trabajos.</p></div><div class="reviews"><article class="review"><div class="stars">★★★★★</div><p>“Excelente trabajo!! Lo recomiendo”</p><strong>Carla Hernandez</strong><small>Facebook</small></article><article class="review"><div class="stars">★★★★★</div><p>“Excelente servicio. Lo recomiendo”</p><strong>Claudia RS</strong><small>Facebook</small></article><article class="review"><div class="stars">★★★★★</div><p>“Excelente servicio, mis sillones quedaron como nuevos. Gracias”</p><strong>Anto Paez</strong><small>Facebook</small></article><article class="review"><div class="stars">★★★★★</div><p>“Excelente Trabajo el que Realizaron con mis sillones, rápidos y ordenados... MUYYYY Recomendables”</p><strong>Adriana Sarmiento</strong><small>Facebook</small></article><article class="review"><div class="stars">★★★★★</div><p>“Las sillas las dejaron muy bien y los detalles adentro del auto también. Gracias.”</p><strong>Cliente de BC</strong><small>WhatsApp</small></article><article class="review"><div class="stars">★★★★★</div><p>“El antes y el después de la camioneta... Quedó increíble!!! Muchísimas gracias”</p><strong>Cliente de BC</strong><small>WhatsApp</small></article></div>
+<div class="google-review-container">
+    <a href="https://g.page/r/CX-pioXxge0lEAE/review" target="_blank" rel="noopener noreferrer" class="btn-google-custom">
+        Dejanos tu opinión en Google
+    </a>
+</div></div></div></section>
 
 <section class="soft"><div class="container"><div class="billing"><div><h3>🧾 Emitimos factura</h3><p>Realizamos facturación tanto para particulares como para empresas.</p></div><div class="billing-badge">Particulares + empresas</div></div></div></section>
 
