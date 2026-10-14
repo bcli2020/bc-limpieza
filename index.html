@@ -76,11 +76,121 @@ footer{background:#0c1827;color:#fff;padding:38px 0 100px}.foot{display:flex;jus
         padding: 12px 20px;
     }
 }
+/* CONTACTO BC - estilo minimalista */
+.contacto-bc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.contacto-bc h3 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.contacto-bc .contacto-enlace {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 0;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.13);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contacto-bc .contacto-enlace:hover {
+    color: #39c900;
+    transform: translateX(4px);
+}
+
+.contacto-bc .contacto-icono {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.contacto-bc .contacto-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contacto-bc .contacto-datos small {
+    color: #b9cbe0;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+    .contacto-bc {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* Botón flotante de WhatsApp minimalista */
+a.whatsapp {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #18d66b;
+    border: 4px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+a.whatsapp:hover {
+    background: #39c900;
+    transform: scale(1.07);
+}
+
+/* Pie de página: contacto minimalista */
+.foot{align-items:flex-start;gap:42px}
+.foot-brand{flex:0 1 42%;min-width:250px}
+.foot-brand-copy{margin-top:10px;display:flex;flex-direction:column;gap:4px}
+.foot-brand-copy small{color:#aebccc}
+.contacto-bc{flex:1;display:grid;grid-template-columns:1fr 1.25fr;gap:32px;align-items:start;margin-top:0}
+.contacto-bc h3{font-size:1.2rem;letter-spacing:1.5px;margin:0 0 10px}
+.contacto-enlace{display:flex;align-items:center;gap:13px;padding:11px 0;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.13);transition:color .2s ease,transform .2s ease}
+.contacto-enlace:hover{color:#39c900;transform:translateX(3px)}
+.contacto-icono{width:30px;min-width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;line-height:1}
+.contacto-datos{display:flex;flex-direction:column;gap:2px;min-width:0}
+.contacto-datos strong{font-size:14px}
+.contacto-datos small{color:#b9cbe0;font-size:12px;overflow-wrap:anywhere}
+.contacto-svg{width:24px;height:24px;display:block;flex:0 0 auto}.facebook-icon{color:#1877f2}
+.instagram-icon{color:#e4405f}
+.tiktok-icon{color:#fff;text-shadow:1px 1px #fe2c55,-1px -1px #25f4ee}
+.correo-icon,.telefono-icon{color:#39c900}
+.whatsapp-icon{color:#25d366}
+.whatsapp{background:#18d66b;display:flex;align-items:center;justify-content:center}
+.whatsapp svg{width:30px;height:30px;display:block}
+@media(max-width:800px){.foot{flex-direction:column;align-items:stretch}.foot-brand{min-width:0}.contacto-bc{grid-template-columns:1fr 1fr;gap:20px}}
+@media(max-width:520px){.contacto-bc{grid-template-columns:1fr;gap:8px}.contacto-bc h3{margin-bottom:6px}.foot{gap:28px}}
+
+/* Íconos oficiales de WhatsApp: encabezado, contacto y botón flotante */
+.nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:9px}
+.wa-brand-icon{display:block;width:24px;height:24px;flex:0 0 auto}
+.nav-cta .wa-brand-icon{width:23px;height:23px;color:#fff}
+.contacto-icono.whatsapp-icon{display:flex;align-items:center;justify-content:center}
+.contacto-icono.whatsapp-icon .wa-brand-icon{width:25px;height:25px;color:#25d366}
+.whatsapp .wa-brand-icon{width:34px;height:34px;color:#fff}
 </style>
 </head>
 <body>
 <div class="topbar"><div class="container"><span>📍 Gran Mendoza, Mendoza</span><span>🚐 Servicio a domicilio</span><span>📲 261 640 2655</span></div></div>
-<nav class="nav"><div class="container navin"><a href="#inicio"><img class="logo" src="assets/img/logo-bc.png" alt="BC Limpieza de Tapizados y Desinfección"></a><div class="links"><a href="#quienes">Quiénes somos</a><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#trabajos">Trabajos</a><a href="#opiniones">Opiniones</a></div><a class="nav-cta" href="https://wa.me/5492616402655?text=Hola%20BC,%20quiero%20consultar%20por%20un%20servicio." target="_blank" rel="noopener">WhatsApp</a></div></nav>
+<nav class="nav"><div class="container navin"><a href="#inicio"><img class="logo" src="assets/img/logo-bc.png" alt="BC Limpieza de Tapizados y Desinfección"></a><div class="links"><a href="#quienes">Quiénes somos</a><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#trabajos">Trabajos</a><a href="#opiniones">Opiniones</a></div><a class="nav-cta" href="https://wa.me/5492616402655?text=Hola%20BC,%20quiero%20consultar%20por%20un%20servicio." target="_blank" rel="noopener"><svg class="wa-brand-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3.2A12.2 12.2 0 0 0 5.5 21.6L4 28l6.6-1.7A12.2 12.2 0 1 0 16 3.2Z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.2 9.8c-.4-.8-.8-.8-1.2-.8h-.9c-.3 0-.8.1-1.2.6-.4.5-1.5 1.5-1.5 3.7s1.5 4.3 1.7 4.6c.2.3 2.9 4.6 7.1 6.2 3.5 1.4 4.2 1.1 5 .9.8-.1 2.5-1 2.9-2 .4-1 .4-1.8.3-2-.1-.2-.4-.3-.9-.6l-3-1.5c-.4-.2-.7-.2-1 .2l-1.4 1.7c-.3.3-.5.4-1 .2-.5-.2-2-.7-3.7-2.2-1.4-1.2-2.3-2.7-2.6-3.2-.3-.5 0-.7.2-1l.7-.8c.2-.3.3-.5.5-.8.1-.3.1-.6 0-.8Z" fill="currentColor" transform="translate(4 2) scale(.82)"/></svg><span>WhatsApp</span></a></div></nav>
 <main id="inicio">
 <section class="hero"><div class="container hero-grid"><div><div class="eyebrow"><i></i> Empresa familiar · Gran Mendoza</div><h1>Devolvemos la vida a tus <span>tapizados.</span></h1><p><strong>BC Limpieza de Tapizados y Desinfección</strong> trabaja a domicilio en Gran Mendoza. Mostramos nuestros trabajos, nuestros equipos y el proceso real para que conozcas cómo trabajamos.</p><div class="actions"><a class="btn btn-green" href="https://wa.me/5492616402655?text=Hola%20BC,%20quiero%20pedir%20un%20presupuesto." target="_blank" rel="noopener">📲 Pedir presupuesto</a><a class="btn btn-light" href="#trabajos">✨ Ver trabajos reales</a></div><div class="hero-note"><span>✓ 6 años de experiencia</span><span>✓ Atención a domicilio</span><span>✓ Trabajos reales</span><span>✓ Gran Mendoza</span></div></div><div class="hero-photo"><img src="assets/img/hero-proceso-adaptado.jpg" alt="Trabajo real de BC y equipo de trabajo"><div class="hero-badge"><strong>Vamos hasta vos 🚐</strong><small>Servicio a domicilio con nuestro propio equipo.</small></div></div></div></section>
 
@@ -118,6 +228,50 @@ footer{background:#0c1827;color:#fff;padding:38px 0 100px}.foot{display:flex;jus
 
 <section><div class="container"><div class="cta"><div><h2>¿Querés consultar por tu tapizado?</h2><p>Mandanos una foto por WhatsApp y contanos qué necesitás limpiar.</p></div><a class="btn btn-green" href="https://wa.me/5492616402655?text=Hola%20BC,%20les%20env%C3%ADo%20una%20foto%20para%20consultar%20por%20limpieza%20de%20tapizados." target="_blank" rel="noopener">📲 Consultar ahora</a></div></div></section>
 </main>
-<footer><div class="container foot"><div><img class="foot-logo" src="assets/img/logo-bc.png" alt="Logo BC"><div style="margin-top:10px"><strong>BC - Limpieza de Tapizados y Desinfección</strong><br><small>Gran Mendoza, Mendoza, Argentina · Servicio a domicilio</small></div><div class="foot-note">Empresa familiar · 6 años de experiencia · Facturación para particulares y empresas</div></div><div class="foot-links"><a href="https://wa.me/5492616402655" target="_blank" rel="noopener">WhatsApp: 261 640 2655</a><a href="https://instagram.com/bc.limpieza" target="_blank" rel="noopener">Instagram: @bc.limpieza</a></div></div></footer>
-<a class="whatsapp" href="https://wa.me/5492616402655?text=Hola%20BC,%20quiero%20consultar%20por%20un%20servicio." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">✆</a>
+<footer>
+  <div class="container foot">
+    <div class="foot-brand">
+      <img class="foot-logo" src="assets/img/logo-bc.png" alt="Logo BC">
+      <div class="foot-brand-copy">
+        <strong>BC - Limpieza de Tapizados y Desinfección</strong>
+        <small>Gran Mendoza, Mendoza, Argentina · Servicio a domicilio</small>
+      </div>
+      <div class="foot-note">Empresa familiar · 6 años de experiencia · Facturación para particulares y empresas</div>
+    </div>
+    <div class="contacto-bc">
+      <div class="contacto-col">
+        <h3>CONTACTO</h3>
+        <a class="contacto-enlace" href="https://www.facebook.com/bc.limpiezas" target="_blank" rel="noopener noreferrer" aria-label="Facebook BC Limpieza">
+          <span class="contacto-icono facebook-icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="contacto-svg" focusable="false"><path fill="currentColor" d="M13.6 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6H17V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.5v3.2h2.8V21z"/></svg></span>
+          <span class="contacto-datos"><strong>Facebook</strong><small>bc.limpiezas</small></span>
+        </a>
+        <a class="contacto-enlace" href="https://www.instagram.com/bc.limpieza/" target="_blank" rel="noopener noreferrer" aria-label="Instagram BC Limpieza">
+          <span class="contacto-icono instagram-icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="contacto-svg" focusable="false"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.7" cy="6.6" r="1.25" fill="currentColor"/></svg></span>
+          <span class="contacto-datos"><strong>Instagram</strong><small>@bc.limpieza</small></span>
+        </a>
+        <a class="contacto-enlace" href="https://www.tiktok.com/@bc.limpieza" target="_blank" rel="noopener noreferrer" aria-label="TikTok BC Limpieza">
+          <span class="contacto-icono tiktok-icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="contacto-svg" focusable="false"><path fill="currentColor" d="M16.7 3c.3 2.2 1.5 3.7 3.8 3.9v3.2a8 8 0 0 1-3.8-1.2v6.5c0 3.5-2.8 5.8-6.1 5.8a5.5 5.5 0 0 1-.5-11h.7v3.4a2.2 2.2 0 1 0 2.5 2.2V3z"/></svg></span>
+          <span class="contacto-datos"><strong>TikTok</strong><small>@bc.limpieza</small></span>
+        </a>
+      </div>
+      <div class="contacto-col contacto-col-extra">
+        <a class="contacto-enlace" href="mailto:boysclean.limpieza@gmail.com" aria-label="Enviar correo electrónico">
+          <span class="contacto-icono correo-icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="contacto-svg" focusable="false"><rect x="2.5" y="4.5" width="19" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="contacto-datos"><strong>Correo</strong><small>boysclean.limpieza@gmail.com</small></span>
+        </a>
+        <a class="contacto-enlace" href="tel:+542616402655" aria-label="Llamar a BC Limpieza">
+          <span class="contacto-icono telefono-icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="contacto-svg" focusable="false"><path fill="currentColor" d="M6.6 2.8 9.5 2a1.7 1.7 0 0 1 1.9 1l1.3 3.1a1.7 1.7 0 0 1-.4 1.9l-1.8 1.5a14.1 14.1 0 0 0 4 4l1.5-1.8a1.7 1.7 0 0 1 1.9-.4l3.1 1.3a1.7 1.7 0 0 1 1 1.9l-.8 2.9a2.1 2.1 0 0 1-2 1.5C10 18.9 5.1 14 4.8 5a2.1 2.1 0 0 1 1.8-2.2Z"/></svg></span>
+          <span class="contacto-datos"><strong>Teléfono</strong><small>261 640 2655</small></span>
+        </a>
+        <a class="contacto-enlace" href="https://wa.me/5492616402655" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+          <span class="contacto-icono whatsapp-icon" aria-hidden="true"><svg class="wa-brand-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3.2A12.2 12.2 0 0 0 5.5 21.6L4 28l6.6-1.7A12.2 12.2 0 1 0 16 3.2Z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.2 9.8c-.4-.8-.8-.8-1.2-.8h-.9c-.3 0-.8.1-1.2.6-.4.5-1.5 1.5-1.5 3.7s1.5 4.3 1.7 4.6c.2.3 2.9 4.6 7.1 6.2 3.5 1.4 4.2 1.1 5 .9.8-.1 2.5-1 2.9-2 .4-1 .4-1.8.3-2-.1-.2-.4-.3-.9-.6l-3-1.5c-.4-.2-.7-.2-1 .2l-1.4 1.7c-.3.3-.5.4-1 .2-.5-.2-2-.7-3.7-2.2-1.4-1.2-2.3-2.7-2.6-3.2-.3-.5 0-.7.2-1l.7-.8c.2-.3.3-.5.5-.8.1-.3.1-.6 0-.8Z" fill="currentColor" transform="translate(4 2) scale(.82)"/></svg></span>
+          <span class="contacto-datos"><strong>WhatsApp</strong><small>261 640 2655</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<a class="whatsapp" href="https://wa.me/5492616402655?text=Hola%20BC,%20quiero%20consultar%20por%20un%20servicio." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg class="wa-brand-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3.2A12.2 12.2 0 0 0 5.5 21.6L4 28l6.6-1.7A12.2 12.2 0 1 0 16 3.2Z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.2 9.8c-.4-.8-.8-.8-1.2-.8h-.9c-.3 0-.8.1-1.2.6-.4.5-1.5 1.5-1.5 3.7s1.5 4.3 1.7 4.6c.2.3 2.9 4.6 7.1 6.2 3.5 1.4 4.2 1.1 5 .9.8-.1 2.5-1 2.9-2 .4-1 .4-1.8.3-2-.1-.2-.4-.3-.9-.6l-3-1.5c-.4-.2-.7-.2-1 .2l-1.4 1.7c-.3.3-.5.4-1 .2-.5-.2-2-.7-3.7-2.2-1.4-1.2-2.3-2.7-2.6-3.2-.3-.5 0-.7.2-1l.7-.8c.2-.3.3-.5.5-.8.1-.3.1-.6 0-.8Z" fill="currentColor" transform="translate(4 2) scale(.82)"/></svg>
+</a>
 </body></html>
